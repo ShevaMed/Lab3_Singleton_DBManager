@@ -7,6 +7,11 @@ DBManager::DBManager()
     db.open();
 }
 
+DBManager::~DBManager()
+{
+    db.close();
+}
+
 DBManager& DBManager::getInstance()
 {
     static DBManager instance;

@@ -8,6 +8,7 @@ class DBManager
     DBManager();
     DBManager(const DBManager&);
     DBManager& operator=(DBManager&);
+    ~DBManager();
 
 public:
     static DBManager& getInstance();
